@@ -7,7 +7,7 @@
 	<h1>
 	<?php
 
-	echo "IF YOU SEE THIS MESSAGE THE ANSIBLE PAYBOOK WORKED!!!!"
+	echo "IF YOU SEE THIS MESSAGE THE ANSIBLE PLAYBOOK WORKED!!!!"
 
 	?>
         </h1> 
