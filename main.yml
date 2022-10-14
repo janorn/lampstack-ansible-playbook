@@ -17,8 +17,8 @@
    - name: Enable the firewall port for Apache
      firewalld: port=80/tcp permanent=true state=enabled immediate=yes
   
-   - name: Install MySQL-python
-     yum: name=MySQL-python state=present
+   - name: Install MySQL-connector-python
+     yum: name=mysql-connector-python state=present
 
    - name: Start & Enable MySQL Server to start on boot
      service: name=mysqld state=started enabled=yes
