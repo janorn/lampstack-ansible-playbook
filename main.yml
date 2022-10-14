@@ -8,7 +8,7 @@
      with_items:
       - httpd
       - php
-      - php-mysql
+      - php-mysqlnd
 
    - name: Start & Enable Apache Server to start on boot
      service: name=httpd state=started enabled=yes
