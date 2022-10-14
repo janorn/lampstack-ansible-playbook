@@ -1,3 +1,2 @@
 ---
-dependencies:
-  - src: geerlingguy.mysql
+- src: geerlingguy.mysql
