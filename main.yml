@@ -26,7 +26,7 @@
 
    - name: Copying php file in the /var/www/html
      copy:
-       src: /home/ansible/lampstack-ansible-playbook/index.php
+       src: index.php
        dest: /var/www/html/index.php
   
    - name: Restart service httpd, after copying index.php 
