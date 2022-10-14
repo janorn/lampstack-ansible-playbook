@@ -1,7 +1,8 @@
 ---
 - hosts: all
   become: yes 
-
+  roles:
+    - role: geerlingguy.mysql
   tasks:
    - name: Install httpd and php
      yum: name={{ item }} state=present
@@ -15,14 +16,6 @@
 
    - name: Enable the firewall port for Apache
      firewalld: port=80/tcp permanent=true state=enabled immediate=yes
-
-   - name: Install MySQL Software Repo
-     yum:
-       name: http://repo.mysql.com/mysql57-community-release-el7-10.noarch.rpm
-       state: present
-
-   - name: Install MySQL Database
-     yum: name=mysql-server state=present
   
    - name: Install MySQL-python
      yum: name=MySQL-python state=present
